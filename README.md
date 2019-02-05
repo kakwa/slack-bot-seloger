@@ -8,7 +8,7 @@ slack plugin for seloger
 This supybot plugin searches and alerts you in query for any new adds on 
 the french website "www.seloger.com".
 
-It's a Quick and Dirty adaptation from [Supybot IRC pluging from seloger](https://github.com/kakwa/supybot-plugin-seloger/)
+It's a Quick and Dirty adaptation from [Supybot IRC pluging for seloger](https://github.com/kakwa/supybot-plugin-seloger/) I've previously implemented.
 
 ## License ##
 
