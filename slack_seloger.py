@@ -807,7 +807,7 @@ event):
                     counter += 1
                 print('End printing')
                 #we search every 5 minutes
-                time.sleep(30)
+                time.sleep(300)
                 self._releaseLock('print')
 
     def _reformat_date(self, date):
