@@ -37,23 +37,23 @@ slhelp
 
 ```bash
 <nickname> !sladdrent 59000 20 600 1
-<supyhome> Done sladd
+<seloger> Done sladd
 ```
 
 * `sladdbuy <postal code> <min surface> <max price> <min_num_room>`: add a new buy search for you
 
 ```bash
 <nickname> !sladdbuy 75001 20 6000000000 10
-<supyhome> Done sladd
+<seloger> Done sladd
 ```
 
 * `sllist`: list your active searches
 
 ```bash
 <nickname> !sllist
-<supyhome> ID: d5671b6f12ebee2449f307513f3c6322 | Surface >= 20 | Loyer <= 600 | cp == 59000 | type ad == 1 | Pieces >= 1
-<supyhome> ID: 939262a37d935f4e6297de3a7afbf483 | Surface >= 20 | Loyer <= 6000000000 | cp == 75001 | type ad == 2 | Pieces >= 10
-<supyhome> Done sllist
+<seloger> ID: d5671b6f12ebee2449f307513f3c6322 | Surface >= 20 | Loyer <= 600 | cp == 59000 | type ad == 1 | Pieces >= 1
+<seloger> ID: 939262a37d935f4e6297de3a7afbf483 | Surface >= 20 | Loyer <= 6000000000 | cp == 75001 | type ad == 2 | Pieces >= 10
+<seloger> Done sllist
 ```
 
 * `sldisable <search ID>`: remove the given search (use sllist to recover the <search ID>)
@@ -67,16 +67,16 @@ slhelp
 
 ```bash
 <nickname> !slstatrent 59000
-<supyhome> [...]
-<supyhome> Done slstat
+<seloger> [...]
+<seloger> Done slstat
 ```
 
 * `!slstatbuy <postal code|'all'>`: print some stats about your buy searches
 
 ```bash
 <nickname> slstatbuy all
-<supyhome> [...]
-<supyhome> Done slstat
+<seloger> [...]
+<seloger> Done slstat
 ```
 
 This plugin replies you and sends you new adds in PM.
