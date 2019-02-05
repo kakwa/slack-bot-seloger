@@ -8,7 +8,7 @@ slack plugin for seloger
 This supybot plugin searches and alerts you in query for any new adds on 
 the french website "www.seloger.com".
 
-It's a Quick and Dirty adaptation from [Supybot IRC pluging from seloger](https://github.com/kakwa/supybot-plugin-seloger/)
+It's a Quick and Dirty adaptation from [Supybot IRC pluging for seloger](https://github.com/kakwa/supybot-plugin-seloger/) I've previously implemented.
 
 ## License ##
 
@@ -30,7 +30,7 @@ Here is the commands list with a few examples:
 * `slhelp`: help for this module
 
 ```bash
-slhelp
+<nickname> !slhelp
 ```
 
 * `sladdrent <postal code> <min surface> <max price> <min_num_room>`: add a new rent search for you
@@ -74,7 +74,7 @@ slhelp
 * `!slstatbuy <postal code|'all'>`: print some stats about your buy searches
 
 ```bash
-<nickname> slstatbuy all
+<nickname> !slstatbuy all
 <seloger> [...]
 <seloger> Done slstat
 ```
