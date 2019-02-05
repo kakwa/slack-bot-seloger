@@ -74,7 +74,7 @@ slhelp
 * `!slstatbuy <postal code|'all'>`: print some stats about your buy searches
 
 ```bash
-<nickname> slstatbuy all
+<nickname> !slstatbuy all
 <seloger> [...]
 <seloger> Done slstat
 ```
