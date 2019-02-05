@@ -30,7 +30,7 @@ Here is the commands list with a few examples:
 * `slhelp`: help for this module
 
 ```bash
-slhelp
+<nickname> !slhelp
 ```
 
 * `sladdrent <postal code> <min surface> <max price> <min_num_room>`: add a new rent search for you
