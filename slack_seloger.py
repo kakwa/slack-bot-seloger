@@ -794,21 +794,24 @@ event):
         and prints any new results to each user
         """
         while True:
-            if self._acquireLock('print', blocking=False):
-                print('Get new ads')
-                self._update_db()
-                print('Call seloger for new ads')
-                ads = self.backend.get_new()
-                print('Start printing')
-                total = len(ads)
-                counter = 1
-                for ad in ads:
-                    self._print_ad(ad, counter, total)
-                    counter += 1
-                print('End printing')
-                #we search every 5 minutes
-                time.sleep(300)
-                self._releaseLock('print')
+            try:
+                if self._acquireLock('print', blocking=False):
+                    print('Get new ads')
+                    self._update_db()
+                    print('Call seloger for new ads')
+                    ads = self.backend.get_new()
+                    print('Start printing')
+                    total = len(ads)
+                    counter = 1
+                    for ad in ads:
+                        self._print_ad(ad, counter, total)
+                        counter += 1
+                    print('End printing')
+                    #we search every 5 minutes
+                    time.sleep(300)
+                    self._releaseLock('print')
+            except Exception as e:
+                print(str(e))
 
     def _reformat_date(self, date):
         """small function reformatting the date from SeLoger
